@@ -1,0 +1,80 @@
+.main{
+    height: 500px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-bottom: 10;    
+}
+.container h1{
+    font-size: 100px;
+    margin-top: 200px;
+}
+.bg-image{
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    filter: brightness(0.9);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* API */
+.mt-4{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px; /* To adjust the text go down add space to the text*/
+  }
+  
+  .container {
+    padding: 20px;
+
+  }
+  
+  .card {
+    width: calc(33.33% - 20px); /* Adjust card width based on the number of cards per row */
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the card */
+    border-radius: 8px; /* Add rounded corners to the card */
+    overflow: hidden; /* Hide any content that overflows the card */
+    transition: transform 0.3s ease; /* Add transition effect */
+    float: left; /* Float the cards to arrange horizontally */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift the card slightly when hovered */
+  }
+  
+  .card img {
+    width: 100%; /* Make the image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-body h3{
+  /* Add padding to the card body */
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .card-body{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+

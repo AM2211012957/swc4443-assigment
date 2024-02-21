@@ -1,0 +1,26 @@
+<div class="main">
+  <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active"><strong>YouTube API System</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mx-auto" width="200px;">
+            <li class="nav-item">
+              <a class="nav-link active px-lg-4" [routerLink]="['/home']" routerLinkActive="router-link-active"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" [routerLink]="['/aboutus']" routerLinkActive="router-link-active" ><strong>About</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" [routerLink]="['/searchpage']" routerLinkActive="router-link-active"><strong>Search</strong></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-sm-2" type="search" placeholder="Search" [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()">
+          </form>
+        </div>
+      </div>
+    </nav>
+</div>

@@ -1,0 +1,53 @@
+/* searchresult.component.css */
+.mt-4{
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px); /* Adjust card width based on the number of cards per row */
+  margin: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the card */
+  border-radius: 8px; /* Add rounded corners to the card */
+  overflow: hidden; /* Hide any content that overflows the card */
+  transition: transform 0.3s ease; /* Add transition effect */
+  float: left; /* Float the cards to arrange horizontally */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card slightly when hovered */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the card width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 15px; /* Add padding to the card body */
+}
+
+.card-title {
+  font-size: 16px; /* Reduce the font size of the title */
+  margin-bottom: 8px; /* Reduce the margin bottom of the title */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #606060; /* Change text color to a darker shade */
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.btn {
+  font-size: 14px;
+}
